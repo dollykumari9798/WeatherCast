@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="wa2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbarL">
+        <div class="icon">
+          <img src="images\clouds.png" alt="" srcset="" />
+        </div>
+        <h1>Weather Today</h1>
+      </div>
+      <div class="navbarR">
+        <div class="Searchbar">
+          <input placeholder="Search city" type="text" />
+          <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="#666666"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="up">
+      <div class="sq1">
+        <div class="element">
+          <img id="sun" src="images\drizzle.png" />
+          <h4 id="text">28 °C</h4>
+          <div class="E1">
+            <img src="images\thunderstorm.png" />
+            <h5 class="txt" id="Weather">Rainy storm clouds</h5>
+          </div>
+          <div class="E2">
+            <img src="images\location.png" />
+            <h5 class="txt" id ="place">florida,US</h5>
+          </div>
+          <div class="E3">
+            <img src="images\calendar.png" />
+            <h5 class="txt" id="timeDate">24 july,2022 5:01 AM</h5>
+          </div>
+        </div>
+      </div>
+      <div class="rec1">
+        <div class="recU">
+          <div class="r1">
+            <span id="wind">Wind Status</span>
+            <img src="images\wind (1).png" />
+            <span id="speed">7.90</span>
+            <span id="km">Km/h</span>
+            <span id="time">5.01</span>
+          </div>
+          <div class="r2">
+            <h3 id="wind">UV Index</h3>
+            <img src="images\ultraviolet.png" />
+            <div class="uvdata"><span id="uv">5.50</span>
+            <span id="km">Uv</span>
+            <!-- <span id="time">5.01</span> -->
+          </div>
+          </div>
+          <div class="r3">
+            <span id="wind">Sunset & Sunrise</span>
+            <img src="images\sun.png" />
+            <div class="sundata">
+            <span id="sunrise">7.90</span>
+            <!-- <span id="km">Km/h</span> -->
+            <span id="sunset">5.01</span>
+          </div>
+          </div>
+        </div>
+        <div class="recD">
+          <div class="d1">
+            <div class="d11">
+              <h4 id="heading">Humidity</h4>
+              <h2 id="num">84%</h2>
+            </div>
+            <div class="d22">
+              <img class="hum" src="images\humidity.png" />
+              <h5 id="text">The dew point is 27 <br />right now</h5>
+            </div>
+          </div>
+<!-- d2 strt..................................... -->
+          <div class="d1">
+            <div class="d11">
+              <h4 id="heading">Min Temperature</h4>
+              <h2 id="min">3km</h2>
+            </div>
+            <div class="d11">
+              <h4 id="tem">Max Temperature</h4>
+              <h2 id="max">52 </h2>
+            </div>
+          </div>
+<!-- d3......................... -->
+          <div class="d1">
+            <div class="d11">
+              <h4 id="heading">Feels like</h4>
+              <h2 id="FL">42°C</h2>
+            </div>
+            <div class="d22">
+              <img class ="hum" src="images\thermometer (1).png" />
+              <h5 id="text">The dew point is 27 <br />right now</h5>
+            </div>
+          </div>
+
+          <!-- 3end -->
+        </div>
+      </div>
+    </div>
+<!-- lower part -->
+    <div class="down">
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="cardUpper">
+          <div class="cuDate">
+            <div class="dayDate">Sunday <br> Apr 30</div>
+            <div class="photo">
+              <svg width="130" height="50" viewBox="0 0 177 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4229 54.3868C26.6187 53.6773 26.4229 55.163 26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868C11.9156 55.163 11.7198 53.6773 11.9156 54.3868H26.4229Z" fill="#FFEA2D"/>
+                <path d="M26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868M26.4229 54.3868C26.4229 55.163 26.6187 53.6773 26.4229 54.3868ZM26.4229 54.3868H11.9156M11.9156 54.3868C11.7198 53.6773 11.9156 55.163 11.9156 54.3868Z" stroke="white"/>
+                <line x1="10.1777" y1="54.5484" x2="28.1545" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="11.8699" y1="56.4609" x2="26.5829" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="30.1269" y1="54.4115" x2="33.8409" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="27.5085" y1="45.8238" x2="31.3961" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="24.8948" y1="48.5283" x2="26.0016" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="19.0923" y1="46.1176" x2="19.0923" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="13.6878" y1="48.8871" x2="12.5818" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="10.7945" y1="45.9787" x2="6.90679" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M18.6391 42.1789C18.6391 42.455 18.863 42.6789 19.1391 42.6789C19.4152 42.6789 19.6391 42.455 19.6391 42.1789H18.6391ZM19.1391 31.8443L16.2523 36.8443H22.0259L19.1391 31.8443ZM19.6391 42.1789V36.3443H18.6391V42.1789H19.6391Z" fill="white"/>
+                <line x1="4.50227" y1="54.5538" x2="8.21624" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_0_1)">
+                <circle cx="49.5079" cy="29.1499" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M49.4213 22.7354V21.5219" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 19.0948V13.8939" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 44.2325V39.0316" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 22.0145L38.7816 18.3369" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 39.7895L56.5565 36.1119" stroke="white" stroke-linecap="round"/>
+                <path d="M39.5394 29.0632H34.3385" stroke="white" stroke-linecap="round"/>
+                <path d="M64.6771 29.0632H59.4762" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 36.1119L38.7816 39.7895" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 18.3369L56.5565 22.0145" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 36.6045V35.3909" stroke="white" stroke-linecap="round"/>
+                <path d="M45.0208 33.5682L44.1626 34.4263" stroke="white" stroke-linecap="round"/>
+                <path d="M54.7665 23.7L53.9084 24.5581" stroke="white" stroke-linecap="round"/>
+                <path d="M43.1367 29.1065H41.9232" stroke="white" stroke-linecap="round"/>
+                <path d="M57.0059 29.0198H55.7923" stroke="white" stroke-linecap="round"/>
+                <path d="M53.9696 33.507L54.8277 34.3651" stroke="white" stroke-linecap="round"/>
+                <path d="M44.1014 23.7613L44.9595 24.6194" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter2_d_0_1)">
+                <circle cx="85.535" cy="16.2628" r="6.79216" fill="#FFEA2D" stroke="white"/>
+                <path d="M85.535 7.52939V4.95581" stroke="white" stroke-linecap="round"/>
+                <path d="M89.7358 6.27271L91.9276 1.10927" stroke="white" stroke-linecap="round"/>
+                <path d="M79.1423 31.2293L81.3341 26.0659" stroke="white" stroke-linecap="round"/>
+                <path d="M81.5074 6.2009L79.4061 0.999994" stroke="white" stroke-linecap="round"/>
+                <path d="M91.6637 31.3386L89.5624 26.1377" stroke="white" stroke-linecap="round"/>
+                <path d="M75.6383 11.9684L70.4749 9.7767" stroke="white" stroke-linecap="round"/>
+                <path d="M100.595 22.5619L95.4315 20.3701" stroke="white" stroke-linecap="round"/>
+                <path d="M75.5665 20.1968L70.3656 22.2981" stroke="white" stroke-linecap="round"/>
+                <path d="M100.704 10.0405L95.5033 12.1418" stroke="white" stroke-linecap="round"/>
+                <path d="M85.535 27.6585V24.7172" stroke="white" stroke-linecap="round"/>
+                <path d="M79.5603 22.3553L77.6034 24.3122" stroke="white" stroke-linecap="round"/>
+                <path d="M93.7421 8.0809L91.7852 10.0378" stroke="white" stroke-linecap="round"/>
+                <path d="M76.8951 16.1693H74.3216" stroke="white" stroke-linecap="round"/>
+                <path d="M97.2999 16.3531H94.3587" stroke="white" stroke-linecap="round"/>
+                <path d="M91.785 22.6032L93.7419 24.5601" stroke="white" stroke-linecap="round"/>
+                <path d="M77.2627 8.0809L79.2196 10.0378" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter3_d_0_1)">
+                <circle cx="121.941" cy="29.2763" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M121.855 22.8619V21.6483" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 19.2212V14.0203" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 44.3589V39.158" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 22.1409L111.215 18.4633" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 39.9159L128.99 36.2383" stroke="white" stroke-linecap="round"/>
+                <path d="M111.973 29.1896H106.772" stroke="white" stroke-linecap="round"/>
+                <path d="M137.111 29.1896H131.91" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 36.2383L111.215 39.9159" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 18.4633L128.99 22.1409" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 36.7309V35.5174" stroke="white" stroke-linecap="round"/>
+                <path d="M117.454 33.6947L116.596 34.5528" stroke="white" stroke-linecap="round"/>
+                <path d="M127.2 23.8265L126.342 24.6846" stroke="white" stroke-linecap="round"/>
+                <path d="M115.57 29.233H114.357" stroke="white" stroke-linecap="round"/>
+                <path d="M129.439 29.1463H128.226" stroke="white" stroke-linecap="round"/>
+                <path d="M126.403 33.6334L127.261 34.4915" stroke="white" stroke-linecap="round"/>
+                <path d="M116.535 23.8878L117.393 24.7459" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter4_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.084 54.3868C164.28 53.6773 164.084 55.163 164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868C149.577 55.163 149.381 53.6773 149.577 54.3868H164.084Z" fill="#FFEA2D"/>
+                <path d="M164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868M164.084 54.3868C164.084 55.163 164.28 53.6773 164.084 54.3868ZM164.084 54.3868H149.577M149.577 54.3868C149.381 53.6773 149.577 55.163 149.577 54.3868Z" stroke="white"/>
+                <line x1="147.839" y1="54.5484" x2="165.816" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="149.531" y1="56.4609" x2="164.244" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="167.788" y1="54.4115" x2="171.502" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="165.17" y1="45.8238" x2="169.057" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="162.556" y1="48.5283" x2="163.663" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="156.754" y1="46.1176" x2="156.754" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="151.349" y1="48.8871" x2="150.243" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="148.456" y1="45.9787" x2="144.568" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M157.301 31.8442C157.301 31.5681 157.077 31.3442 156.801 31.3442C156.524 31.3442 156.301 31.5681 156.301 31.8442H157.301ZM156.801 42.1789L159.687 37.1789H153.914L156.801 42.1789ZM156.301 31.8442V37.6789H157.301V31.8442H156.301Z" fill="white"/>
+                <line x1="142.164" y1="54.5538" x2="145.878" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_0_1" x="0.0022583" y="31.8442" width="38.3386" height="33.1167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter1_d_0_1" x="29.8385" y="13.3939" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_1" x="65.8655" y="0.499847" width="39.3389" height="39.3389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter3_d_0_1" x="102.272" y="13.5203" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter4_d_0_1" x="137.664" y="31.3442" width="38.3385" height="33.6167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+              </div>
+            <div class="time">
+              <div class="sunrise">23:48</div>
+              <div class="sunset"> 23:52</div>
+            </div>
+
+          </div>
+          <div class="cuTemp"> 27<span>°C</span></div>
+
+        </div>
+        <div class="seperator"></div>
+        <div class="cardLower">
+          <div class="clSec1">
+            <div class="icon"><img src="images\humidity.png" alt=""></div>
+            <div class="value">51%</div>
+            <div class="label">Humidity</div>
+          </div>
+          <div class="clSec2">
+            <div class="icon">
+              <img src="images\wind.png" alt=""></div>
+            <div class="value">1.2m/s</div>
+            <div class="label">Wind</div>
+          </div>
+          <div class="clSec3">
+            <div class="icon"> <img src="images\visibility (1).png" alt=""></div>
+            <div class="value">14km</div>
+            <div class="label">Visability</div>
+          </div>
+          <div class="clSec4">
+            <div class="icon"> <img src="images\compass.png" alt=""></div>
+            <div class="value">SW</div>
+            <div class="label">Direction</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="cardUpper">
+          <div class="cuDate">
+            <div class="dayDate">Sunday <br> Apr 30</div>
+            <div class="photo">
+              <svg width="130" height="50" viewBox="0 0 177 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4229 54.3868C26.6187 53.6773 26.4229 55.163 26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868C11.9156 55.163 11.7198 53.6773 11.9156 54.3868H26.4229Z" fill="#FFEA2D"/>
+                <path d="M26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868M26.4229 54.3868C26.4229 55.163 26.6187 53.6773 26.4229 54.3868ZM26.4229 54.3868H11.9156M11.9156 54.3868C11.7198 53.6773 11.9156 55.163 11.9156 54.3868Z" stroke="white"/>
+                <line x1="10.1777" y1="54.5484" x2="28.1545" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="11.8699" y1="56.4609" x2="26.5829" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="30.1269" y1="54.4115" x2="33.8409" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="27.5085" y1="45.8238" x2="31.3961" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="24.8948" y1="48.5283" x2="26.0016" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="19.0923" y1="46.1176" x2="19.0923" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="13.6878" y1="48.8871" x2="12.5818" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="10.7945" y1="45.9787" x2="6.90679" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M18.6391 42.1789C18.6391 42.455 18.863 42.6789 19.1391 42.6789C19.4152 42.6789 19.6391 42.455 19.6391 42.1789H18.6391ZM19.1391 31.8443L16.2523 36.8443H22.0259L19.1391 31.8443ZM19.6391 42.1789V36.3443H18.6391V42.1789H19.6391Z" fill="white"/>
+                <line x1="4.50227" y1="54.5538" x2="8.21624" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_0_1)">
+                <circle cx="49.5079" cy="29.1499" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M49.4213 22.7354V21.5219" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 19.0948V13.8939" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 44.2325V39.0316" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 22.0145L38.7816 18.3369" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 39.7895L56.5565 36.1119" stroke="white" stroke-linecap="round"/>
+                <path d="M39.5394 29.0632H34.3385" stroke="white" stroke-linecap="round"/>
+                <path d="M64.6771 29.0632H59.4762" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 36.1119L38.7816 39.7895" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 18.3369L56.5565 22.0145" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 36.6045V35.3909" stroke="white" stroke-linecap="round"/>
+                <path d="M45.0208 33.5682L44.1626 34.4263" stroke="white" stroke-linecap="round"/>
+                <path d="M54.7665 23.7L53.9084 24.5581" stroke="white" stroke-linecap="round"/>
+                <path d="M43.1367 29.1065H41.9232" stroke="white" stroke-linecap="round"/>
+                <path d="M57.0059 29.0198H55.7923" stroke="white" stroke-linecap="round"/>
+                <path d="M53.9696 33.507L54.8277 34.3651" stroke="white" stroke-linecap="round"/>
+                <path d="M44.1014 23.7613L44.9595 24.6194" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter2_d_0_1)">
+                <circle cx="85.535" cy="16.2628" r="6.79216" fill="#FFEA2D" stroke="white"/>
+                <path d="M85.535 7.52939V4.95581" stroke="white" stroke-linecap="round"/>
+                <path d="M89.7358 6.27271L91.9276 1.10927" stroke="white" stroke-linecap="round"/>
+                <path d="M79.1423 31.2293L81.3341 26.0659" stroke="white" stroke-linecap="round"/>
+                <path d="M81.5074 6.2009L79.4061 0.999994" stroke="white" stroke-linecap="round"/>
+                <path d="M91.6637 31.3386L89.5624 26.1377" stroke="white" stroke-linecap="round"/>
+                <path d="M75.6383 11.9684L70.4749 9.7767" stroke="white" stroke-linecap="round"/>
+                <path d="M100.595 22.5619L95.4315 20.3701" stroke="white" stroke-linecap="round"/>
+                <path d="M75.5665 20.1968L70.3656 22.2981" stroke="white" stroke-linecap="round"/>
+                <path d="M100.704 10.0405L95.5033 12.1418" stroke="white" stroke-linecap="round"/>
+                <path d="M85.535 27.6585V24.7172" stroke="white" stroke-linecap="round"/>
+                <path d="M79.5603 22.3553L77.6034 24.3122" stroke="white" stroke-linecap="round"/>
+                <path d="M93.7421 8.0809L91.7852 10.0378" stroke="white" stroke-linecap="round"/>
+                <path d="M76.8951 16.1693H74.3216" stroke="white" stroke-linecap="round"/>
+                <path d="M97.2999 16.3531H94.3587" stroke="white" stroke-linecap="round"/>
+                <path d="M91.785 22.6032L93.7419 24.5601" stroke="white" stroke-linecap="round"/>
+                <path d="M77.2627 8.0809L79.2196 10.0378" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter3_d_0_1)">
+                <circle cx="121.941" cy="29.2763" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M121.855 22.8619V21.6483" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 19.2212V14.0203" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 44.3589V39.158" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 22.1409L111.215 18.4633" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 39.9159L128.99 36.2383" stroke="white" stroke-linecap="round"/>
+                <path d="M111.973 29.1896H106.772" stroke="white" stroke-linecap="round"/>
+                <path d="M137.111 29.1896H131.91" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 36.2383L111.215 39.9159" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 18.4633L128.99 22.1409" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 36.7309V35.5174" stroke="white" stroke-linecap="round"/>
+                <path d="M117.454 33.6947L116.596 34.5528" stroke="white" stroke-linecap="round"/>
+                <path d="M127.2 23.8265L126.342 24.6846" stroke="white" stroke-linecap="round"/>
+                <path d="M115.57 29.233H114.357" stroke="white" stroke-linecap="round"/>
+                <path d="M129.439 29.1463H128.226" stroke="white" stroke-linecap="round"/>
+                <path d="M126.403 33.6334L127.261 34.4915" stroke="white" stroke-linecap="round"/>
+                <path d="M116.535 23.8878L117.393 24.7459" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter4_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.084 54.3868C164.28 53.6773 164.084 55.163 164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868C149.577 55.163 149.381 53.6773 149.577 54.3868H164.084Z" fill="#FFEA2D"/>
+                <path d="M164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868M164.084 54.3868C164.084 55.163 164.28 53.6773 164.084 54.3868ZM164.084 54.3868H149.577M149.577 54.3868C149.381 53.6773 149.577 55.163 149.577 54.3868Z" stroke="white"/>
+                <line x1="147.839" y1="54.5484" x2="165.816" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="149.531" y1="56.4609" x2="164.244" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="167.788" y1="54.4115" x2="171.502" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="165.17" y1="45.8238" x2="169.057" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="162.556" y1="48.5283" x2="163.663" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="156.754" y1="46.1176" x2="156.754" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="151.349" y1="48.8871" x2="150.243" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="148.456" y1="45.9787" x2="144.568" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M157.301 31.8442C157.301 31.5681 157.077 31.3442 156.801 31.3442C156.524 31.3442 156.301 31.5681 156.301 31.8442H157.301ZM156.801 42.1789L159.687 37.1789H153.914L156.801 42.1789ZM156.301 31.8442V37.6789H157.301V31.8442H156.301Z" fill="white"/>
+                <line x1="142.164" y1="54.5538" x2="145.878" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_0_1" x="0.0022583" y="31.8442" width="38.3386" height="33.1167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter1_d_0_1" x="29.8385" y="13.3939" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_1" x="65.8655" y="0.499847" width="39.3389" height="39.3389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter3_d_0_1" x="102.272" y="13.5203" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter4_d_0_1" x="137.664" y="31.3442" width="38.3385" height="33.6167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+              </div>
+            <div class="time">
+              <div class="sunrise">23:48</div>
+              <div class="sunset"> 23:52</div>
+            </div>
+
+          </div>
+          <div class="cuTemp"> 27<span>°C</span></div>
+
+        </div>
+        <div class="seperator"></div>
+        <div class="cardLower">
+          <div class="clSec1">
+            <div class="icon"><img src="images\humidity.png" alt=""></div>
+            <div class="value">51%</div>
+            <div class="label">Humidity</div>
+          </div>
+          <div class="clSec2">
+            <div class="icon">
+              <img src="images\wind.png" alt=""></div>
+            <div class="value">1.2m/s</div>
+            <div class="label">Wind</div>
+          </div>
+          <div class="clSec3">
+            <div class="icon"> <img src="images\visibility (1).png" alt=""></div>
+            <div class="value">14km</div>
+            <div class="label">Visability</div>
+          </div>
+          <div class="clSec4">
+            <div class="icon"> <img src="images\compass.png" alt=""></div>
+            <div class="value">SW</div>
+            <div class="label">Direction</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="cardUpper">
+          <div class="cuDate">
+            <div class="dayDate">Sunday <br> Apr 30</div>
+            <div class="photo">
+              <svg width="130" height="50" viewBox="0 0 177 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4229 54.3868C26.6187 53.6773 26.4229 55.163 26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868C11.9156 55.163 11.7198 53.6773 11.9156 54.3868H26.4229Z" fill="#FFEA2D"/>
+                <path d="M26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868M26.4229 54.3868C26.4229 55.163 26.6187 53.6773 26.4229 54.3868ZM26.4229 54.3868H11.9156M11.9156 54.3868C11.7198 53.6773 11.9156 55.163 11.9156 54.3868Z" stroke="white"/>
+                <line x1="10.1777" y1="54.5484" x2="28.1545" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="11.8699" y1="56.4609" x2="26.5829" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="30.1269" y1="54.4115" x2="33.8409" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="27.5085" y1="45.8238" x2="31.3961" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="24.8948" y1="48.5283" x2="26.0016" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="19.0923" y1="46.1176" x2="19.0923" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="13.6878" y1="48.8871" x2="12.5818" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="10.7945" y1="45.9787" x2="6.90679" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M18.6391 42.1789C18.6391 42.455 18.863 42.6789 19.1391 42.6789C19.4152 42.6789 19.6391 42.455 19.6391 42.1789H18.6391ZM19.1391 31.8443L16.2523 36.8443H22.0259L19.1391 31.8443ZM19.6391 42.1789V36.3443H18.6391V42.1789H19.6391Z" fill="white"/>
+                <line x1="4.50227" y1="54.5538" x2="8.21624" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_0_1)">
+                <circle cx="49.5079" cy="29.1499" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M49.4213 22.7354V21.5219" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 19.0948V13.8939" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 44.2325V39.0316" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 22.0145L38.7816 18.3369" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 39.7895L56.5565 36.1119" stroke="white" stroke-linecap="round"/>
+                <path d="M39.5394 29.0632H34.3385" stroke="white" stroke-linecap="round"/>
+                <path d="M64.6771 29.0632H59.4762" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 36.1119L38.7816 39.7895" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 18.3369L56.5565 22.0145" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 36.6045V35.3909" stroke="white" stroke-linecap="round"/>
+                <path d="M45.0208 33.5682L44.1626 34.4263" stroke="white" stroke-linecap="round"/>
+                <path d="M54.7665 23.7L53.9084 24.5581" stroke="white" stroke-linecap="round"/>
+                <path d="M43.1367 29.1065H41.9232" stroke="white" stroke-linecap="round"/>
+                <path d="M57.0059 29.0198H55.7923" stroke="white" stroke-linecap="round"/>
+                <path d="M53.9696 33.507L54.8277 34.3651" stroke="white" stroke-linecap="round"/>
+                <path d="M44.1014 23.7613L44.9595 24.6194" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter2_d_0_1)">
+                <circle cx="85.535" cy="16.2628" r="6.79216" fill="#FFEA2D" stroke="white"/>
+                <path d="M85.535 7.52939V4.95581" stroke="white" stroke-linecap="round"/>
+                <path d="M89.7358 6.27271L91.9276 1.10927" stroke="white" stroke-linecap="round"/>
+                <path d="M79.1423 31.2293L81.3341 26.0659" stroke="white" stroke-linecap="round"/>
+                <path d="M81.5074 6.2009L79.4061 0.999994" stroke="white" stroke-linecap="round"/>
+                <path d="M91.6637 31.3386L89.5624 26.1377" stroke="white" stroke-linecap="round"/>
+                <path d="M75.6383 11.9684L70.4749 9.7767" stroke="white" stroke-linecap="round"/>
+                <path d="M100.595 22.5619L95.4315 20.3701" stroke="white" stroke-linecap="round"/>
+                <path d="M75.5665 20.1968L70.3656 22.2981" stroke="white" stroke-linecap="round"/>
+                <path d="M100.704 10.0405L95.5033 12.1418" stroke="white" stroke-linecap="round"/>
+                <path d="M85.535 27.6585V24.7172" stroke="white" stroke-linecap="round"/>
+                <path d="M79.5603 22.3553L77.6034 24.3122" stroke="white" stroke-linecap="round"/>
+                <path d="M93.7421 8.0809L91.7852 10.0378" stroke="white" stroke-linecap="round"/>
+                <path d="M76.8951 16.1693H74.3216" stroke="white" stroke-linecap="round"/>
+                <path d="M97.2999 16.3531H94.3587" stroke="white" stroke-linecap="round"/>
+                <path d="M91.785 22.6032L93.7419 24.5601" stroke="white" stroke-linecap="round"/>
+                <path d="M77.2627 8.0809L79.2196 10.0378" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter3_d_0_1)">
+                <circle cx="121.941" cy="29.2763" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M121.855 22.8619V21.6483" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 19.2212V14.0203" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 44.3589V39.158" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 22.1409L111.215 18.4633" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 39.9159L128.99 36.2383" stroke="white" stroke-linecap="round"/>
+                <path d="M111.973 29.1896H106.772" stroke="white" stroke-linecap="round"/>
+                <path d="M137.111 29.1896H131.91" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 36.2383L111.215 39.9159" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 18.4633L128.99 22.1409" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 36.7309V35.5174" stroke="white" stroke-linecap="round"/>
+                <path d="M117.454 33.6947L116.596 34.5528" stroke="white" stroke-linecap="round"/>
+                <path d="M127.2 23.8265L126.342 24.6846" stroke="white" stroke-linecap="round"/>
+                <path d="M115.57 29.233H114.357" stroke="white" stroke-linecap="round"/>
+                <path d="M129.439 29.1463H128.226" stroke="white" stroke-linecap="round"/>
+                <path d="M126.403 33.6334L127.261 34.4915" stroke="white" stroke-linecap="round"/>
+                <path d="M116.535 23.8878L117.393 24.7459" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter4_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.084 54.3868C164.28 53.6773 164.084 55.163 164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868C149.577 55.163 149.381 53.6773 149.577 54.3868H164.084Z" fill="#FFEA2D"/>
+                <path d="M164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868M164.084 54.3868C164.084 55.163 164.28 53.6773 164.084 54.3868ZM164.084 54.3868H149.577M149.577 54.3868C149.381 53.6773 149.577 55.163 149.577 54.3868Z" stroke="white"/>
+                <line x1="147.839" y1="54.5484" x2="165.816" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="149.531" y1="56.4609" x2="164.244" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="167.788" y1="54.4115" x2="171.502" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="165.17" y1="45.8238" x2="169.057" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="162.556" y1="48.5283" x2="163.663" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="156.754" y1="46.1176" x2="156.754" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="151.349" y1="48.8871" x2="150.243" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="148.456" y1="45.9787" x2="144.568" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M157.301 31.8442C157.301 31.5681 157.077 31.3442 156.801 31.3442C156.524 31.3442 156.301 31.5681 156.301 31.8442H157.301ZM156.801 42.1789L159.687 37.1789H153.914L156.801 42.1789ZM156.301 31.8442V37.6789H157.301V31.8442H156.301Z" fill="white"/>
+                <line x1="142.164" y1="54.5538" x2="145.878" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_0_1" x="0.0022583" y="31.8442" width="38.3386" height="33.1167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter1_d_0_1" x="29.8385" y="13.3939" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_1" x="65.8655" y="0.499847" width="39.3389" height="39.3389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter3_d_0_1" x="102.272" y="13.5203" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter4_d_0_1" x="137.664" y="31.3442" width="38.3385" height="33.6167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+              </div>
+            <div class="time">
+              <div class="sunrise">23:48</div>
+              <div class="sunset"> 23:52</div>
+            </div>
+
+          </div>
+          <div class="cuTemp"> 27<span>°C</span></div>
+
+        </div>
+        <div class="seperator"></div>
+        <div class="cardLower">
+          <div class="clSec1">
+            <div class="icon"><img src="images\humidity.png" alt=""></div>
+            <div class="value">51%</div>
+            <div class="label">Humidity</div>
+          </div>
+          <div class="clSec2">
+            <div class="icon">
+              <img src="images\wind.png" alt=""></div>
+            <div class="value">1.2m/s</div>
+            <div class="label">Wind</div>
+          </div>
+          <div class="clSec3">
+            <div class="icon"> <img src="images\visibility (1).png" alt=""></div>
+            <div class="value">14km</div>
+            <div class="label">Visability</div>
+          </div>
+          <div class="clSec4">
+            <div class="icon"> <img src="images\compass.png" alt=""></div>
+            <div class="value">SW</div>
+            <div class="label">Direction</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="cardUpper">
+          <div class="cuDate">
+            <div class="dayDate">Sunday <br> Apr 30</div>
+            <div class="photo">
+              <svg width="130" height="50" viewBox="0 0 177 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4229 54.3868C26.6187 53.6773 26.4229 55.163 26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868C11.9156 55.163 11.7198 53.6773 11.9156 54.3868H26.4229Z" fill="#FFEA2D"/>
+                <path d="M26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868M26.4229 54.3868C26.4229 55.163 26.6187 53.6773 26.4229 54.3868ZM26.4229 54.3868H11.9156M11.9156 54.3868C11.7198 53.6773 11.9156 55.163 11.9156 54.3868Z" stroke="white"/>
+                <line x1="10.1777" y1="54.5484" x2="28.1545" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="11.8699" y1="56.4609" x2="26.5829" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="30.1269" y1="54.4115" x2="33.8409" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="27.5085" y1="45.8238" x2="31.3961" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="24.8948" y1="48.5283" x2="26.0016" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="19.0923" y1="46.1176" x2="19.0923" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="13.6878" y1="48.8871" x2="12.5818" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="10.7945" y1="45.9787" x2="6.90679" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M18.6391 42.1789C18.6391 42.455 18.863 42.6789 19.1391 42.6789C19.4152 42.6789 19.6391 42.455 19.6391 42.1789H18.6391ZM19.1391 31.8443L16.2523 36.8443H22.0259L19.1391 31.8443ZM19.6391 42.1789V36.3443H18.6391V42.1789H19.6391Z" fill="white"/>
+                <line x1="4.50227" y1="54.5538" x2="8.21624" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_0_1)">
+                <circle cx="49.5079" cy="29.1499" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M49.4213 22.7354V21.5219" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 19.0948V13.8939" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 44.2325V39.0316" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 22.0145L38.7816 18.3369" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 39.7895L56.5565 36.1119" stroke="white" stroke-linecap="round"/>
+                <path d="M39.5394 29.0632H34.3385" stroke="white" stroke-linecap="round"/>
+                <path d="M64.6771 29.0632H59.4762" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 36.1119L38.7816 39.7895" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 18.3369L56.5565 22.0145" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 36.6045V35.3909" stroke="white" stroke-linecap="round"/>
+                <path d="M45.0208 33.5682L44.1626 34.4263" stroke="white" stroke-linecap="round"/>
+                <path d="M54.7665 23.7L53.9084 24.5581" stroke="white" stroke-linecap="round"/>
+                <path d="M43.1367 29.1065H41.9232" stroke="white" stroke-linecap="round"/>
+                <path d="M57.0059 29.0198H55.7923" stroke="white" stroke-linecap="round"/>
+                <path d="M53.9696 33.507L54.8277 34.3651" stroke="white" stroke-linecap="round"/>
+                <path d="M44.1014 23.7613L44.9595 24.6194" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter2_d_0_1)">
+                <circle cx="85.535" cy="16.2628" r="6.79216" fill="#FFEA2D" stroke="white"/>
+                <path d="M85.535 7.52939V4.95581" stroke="white" stroke-linecap="round"/>
+                <path d="M89.7358 6.27271L91.9276 1.10927" stroke="white" stroke-linecap="round"/>
+                <path d="M79.1423 31.2293L81.3341 26.0659" stroke="white" stroke-linecap="round"/>
+                <path d="M81.5074 6.2009L79.4061 0.999994" stroke="white" stroke-linecap="round"/>
+                <path d="M91.6637 31.3386L89.5624 26.1377" stroke="white" stroke-linecap="round"/>
+                <path d="M75.6383 11.9684L70.4749 9.7767" stroke="white" stroke-linecap="round"/>
+                <path d="M100.595 22.5619L95.4315 20.3701" stroke="white" stroke-linecap="round"/>
+                <path d="M75.5665 20.1968L70.3656 22.2981" stroke="white" stroke-linecap="round"/>
+                <path d="M100.704 10.0405L95.5033 12.1418" stroke="white" stroke-linecap="round"/>
+                <path d="M85.535 27.6585V24.7172" stroke="white" stroke-linecap="round"/>
+                <path d="M79.5603 22.3553L77.6034 24.3122" stroke="white" stroke-linecap="round"/>
+                <path d="M93.7421 8.0809L91.7852 10.0378" stroke="white" stroke-linecap="round"/>
+                <path d="M76.8951 16.1693H74.3216" stroke="white" stroke-linecap="round"/>
+                <path d="M97.2999 16.3531H94.3587" stroke="white" stroke-linecap="round"/>
+                <path d="M91.785 22.6032L93.7419 24.5601" stroke="white" stroke-linecap="round"/>
+                <path d="M77.2627 8.0809L79.2196 10.0378" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter3_d_0_1)">
+                <circle cx="121.941" cy="29.2763" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M121.855 22.8619V21.6483" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 19.2212V14.0203" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 44.3589V39.158" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 22.1409L111.215 18.4633" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 39.9159L128.99 36.2383" stroke="white" stroke-linecap="round"/>
+                <path d="M111.973 29.1896H106.772" stroke="white" stroke-linecap="round"/>
+                <path d="M137.111 29.1896H131.91" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 36.2383L111.215 39.9159" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 18.4633L128.99 22.1409" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 36.7309V35.5174" stroke="white" stroke-linecap="round"/>
+                <path d="M117.454 33.6947L116.596 34.5528" stroke="white" stroke-linecap="round"/>
+                <path d="M127.2 23.8265L126.342 24.6846" stroke="white" stroke-linecap="round"/>
+                <path d="M115.57 29.233H114.357" stroke="white" stroke-linecap="round"/>
+                <path d="M129.439 29.1463H128.226" stroke="white" stroke-linecap="round"/>
+                <path d="M126.403 33.6334L127.261 34.4915" stroke="white" stroke-linecap="round"/>
+                <path d="M116.535 23.8878L117.393 24.7459" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter4_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.084 54.3868C164.28 53.6773 164.084 55.163 164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868C149.577 55.163 149.381 53.6773 149.577 54.3868H164.084Z" fill="#FFEA2D"/>
+                <path d="M164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868M164.084 54.3868C164.084 55.163 164.28 53.6773 164.084 54.3868ZM164.084 54.3868H149.577M149.577 54.3868C149.381 53.6773 149.577 55.163 149.577 54.3868Z" stroke="white"/>
+                <line x1="147.839" y1="54.5484" x2="165.816" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="149.531" y1="56.4609" x2="164.244" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="167.788" y1="54.4115" x2="171.502" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="165.17" y1="45.8238" x2="169.057" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="162.556" y1="48.5283" x2="163.663" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="156.754" y1="46.1176" x2="156.754" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="151.349" y1="48.8871" x2="150.243" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="148.456" y1="45.9787" x2="144.568" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M157.301 31.8442C157.301 31.5681 157.077 31.3442 156.801 31.3442C156.524 31.3442 156.301 31.5681 156.301 31.8442H157.301ZM156.801 42.1789L159.687 37.1789H153.914L156.801 42.1789ZM156.301 31.8442V37.6789H157.301V31.8442H156.301Z" fill="white"/>
+                <line x1="142.164" y1="54.5538" x2="145.878" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_0_1" x="0.0022583" y="31.8442" width="38.3386" height="33.1167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter1_d_0_1" x="29.8385" y="13.3939" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_1" x="65.8655" y="0.499847" width="39.3389" height="39.3389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter3_d_0_1" x="102.272" y="13.5203" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter4_d_0_1" x="137.664" y="31.3442" width="38.3385" height="33.6167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+              </div>
+            <div class="time">
+              <div class="sunrise">23:48</div>
+              <div class="sunset"> 23:52</div>
+            </div>
+
+          </div>
+          <div class="cuTemp"> 27<span>°C</span></div>
+
+        </div>
+        <div class="seperator"></div>
+        <div class="cardLower">
+          <div class="clSec1">
+            <div class="icon"><img src="images\humidity.png" alt=""></div>
+            <div class="value">51%</div>
+            <div class="label">Humidity</div>
+          </div>
+          <div class="clSec2">
+            <div class="icon">
+              <img src="images\wind.png" alt=""></div>
+            <div class="value">1.2m/s</div>
+            <div class="label">Wind</div>
+          </div>
+          <div class="clSec3">
+            <div class="icon"> <img src="images\visibility (1).png" alt=""></div>
+            <div class="value">14km</div>
+            <div class="label">Visability</div>
+          </div>
+          <div class="clSec4">
+            <div class="icon"> <img src="images\compass.png" alt=""></div>
+            <div class="value">SW</div>
+            <div class="label">Direction</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="cardUpper">
+          <div class="cuDate">
+            <div class="dayDate">Sunday <br> Apr 30</div>
+            <div class="photo">
+              <svg width="130" height="50" viewBox="0 0 177 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4229 54.3868C26.6187 53.6773 26.4229 55.163 26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868C11.9156 55.163 11.7198 53.6773 11.9156 54.3868H26.4229Z" fill="#FFEA2D"/>
+                <path d="M26.4229 54.3868C26.4229 49.9809 23.5832 46.228 19.411 46.228C15.2388 46.228 11.9156 49.9809 11.9156 54.3868M26.4229 54.3868C26.4229 55.163 26.6187 53.6773 26.4229 54.3868ZM26.4229 54.3868H11.9156M11.9156 54.3868C11.7198 53.6773 11.9156 55.163 11.9156 54.3868Z" stroke="white"/>
+                <line x1="10.1777" y1="54.5484" x2="28.1545" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="11.8699" y1="56.4609" x2="26.5829" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="30.1269" y1="54.4115" x2="33.8409" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="27.5085" y1="45.8238" x2="31.3961" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="24.8948" y1="48.5283" x2="26.0016" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="19.0923" y1="46.1176" x2="19.0923" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="13.6878" y1="48.8871" x2="12.5818" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="10.7945" y1="45.9787" x2="6.90679" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M18.6391 42.1789C18.6391 42.455 18.863 42.6789 19.1391 42.6789C19.4152 42.6789 19.6391 42.455 19.6391 42.1789H18.6391ZM19.1391 31.8443L16.2523 36.8443H22.0259L19.1391 31.8443ZM19.6391 42.1789V36.3443H18.6391V42.1789H19.6391Z" fill="white"/>
+                <line x1="4.50227" y1="54.5538" x2="8.21624" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_0_1)">
+                <circle cx="49.5079" cy="29.1499" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M49.4213 22.7354V21.5219" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 19.0948V13.8939" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 44.2325V39.0316" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 22.0145L38.7816 18.3369" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 39.7895L56.5565 36.1119" stroke="white" stroke-linecap="round"/>
+                <path d="M39.5394 29.0632H34.3385" stroke="white" stroke-linecap="round"/>
+                <path d="M64.6771 29.0632H59.4762" stroke="white" stroke-linecap="round"/>
+                <path d="M42.4592 36.1119L38.7816 39.7895" stroke="white" stroke-linecap="round"/>
+                <path d="M60.2341 18.3369L56.5565 22.0145" stroke="white" stroke-linecap="round"/>
+                <path d="M49.5079 36.6045V35.3909" stroke="white" stroke-linecap="round"/>
+                <path d="M45.0208 33.5682L44.1626 34.4263" stroke="white" stroke-linecap="round"/>
+                <path d="M54.7665 23.7L53.9084 24.5581" stroke="white" stroke-linecap="round"/>
+                <path d="M43.1367 29.1065H41.9232" stroke="white" stroke-linecap="round"/>
+                <path d="M57.0059 29.0198H55.7923" stroke="white" stroke-linecap="round"/>
+                <path d="M53.9696 33.507L54.8277 34.3651" stroke="white" stroke-linecap="round"/>
+                <path d="M44.1014 23.7613L44.9595 24.6194" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter2_d_0_1)">
+                <circle cx="85.535" cy="16.2628" r="6.79216" fill="#FFEA2D" stroke="white"/>
+                <path d="M85.535 7.52939V4.95581" stroke="white" stroke-linecap="round"/>
+                <path d="M89.7358 6.27271L91.9276 1.10927" stroke="white" stroke-linecap="round"/>
+                <path d="M79.1423 31.2293L81.3341 26.0659" stroke="white" stroke-linecap="round"/>
+                <path d="M81.5074 6.2009L79.4061 0.999994" stroke="white" stroke-linecap="round"/>
+                <path d="M91.6637 31.3386L89.5624 26.1377" stroke="white" stroke-linecap="round"/>
+                <path d="M75.6383 11.9684L70.4749 9.7767" stroke="white" stroke-linecap="round"/>
+                <path d="M100.595 22.5619L95.4315 20.3701" stroke="white" stroke-linecap="round"/>
+                <path d="M75.5665 20.1968L70.3656 22.2981" stroke="white" stroke-linecap="round"/>
+                <path d="M100.704 10.0405L95.5033 12.1418" stroke="white" stroke-linecap="round"/>
+                <path d="M85.535 27.6585V24.7172" stroke="white" stroke-linecap="round"/>
+                <path d="M79.5603 22.3553L77.6034 24.3122" stroke="white" stroke-linecap="round"/>
+                <path d="M93.7421 8.0809L91.7852 10.0378" stroke="white" stroke-linecap="round"/>
+                <path d="M76.8951 16.1693H74.3216" stroke="white" stroke-linecap="round"/>
+                <path d="M97.2999 16.3531H94.3587" stroke="white" stroke-linecap="round"/>
+                <path d="M91.785 22.6032L93.7419 24.5601" stroke="white" stroke-linecap="round"/>
+                <path d="M77.2627 8.0809L79.2196 10.0378" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter3_d_0_1)">
+                <circle cx="121.941" cy="29.2763" r="6.26117" fill="#FFEA2D" stroke="white"/>
+                <path d="M121.855 22.8619V21.6483" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 19.2212V14.0203" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 44.3589V39.158" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 22.1409L111.215 18.4633" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 39.9159L128.99 36.2383" stroke="white" stroke-linecap="round"/>
+                <path d="M111.973 29.1896H106.772" stroke="white" stroke-linecap="round"/>
+                <path d="M137.111 29.1896H131.91" stroke="white" stroke-linecap="round"/>
+                <path d="M114.893 36.2383L111.215 39.9159" stroke="white" stroke-linecap="round"/>
+                <path d="M132.668 18.4633L128.99 22.1409" stroke="white" stroke-linecap="round"/>
+                <path d="M121.941 36.7309V35.5174" stroke="white" stroke-linecap="round"/>
+                <path d="M117.454 33.6947L116.596 34.5528" stroke="white" stroke-linecap="round"/>
+                <path d="M127.2 23.8265L126.342 24.6846" stroke="white" stroke-linecap="round"/>
+                <path d="M115.57 29.233H114.357" stroke="white" stroke-linecap="round"/>
+                <path d="M129.439 29.1463H128.226" stroke="white" stroke-linecap="round"/>
+                <path d="M126.403 33.6334L127.261 34.4915" stroke="white" stroke-linecap="round"/>
+                <path d="M116.535 23.8878L117.393 24.7459" stroke="white" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter4_d_0_1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M164.084 54.3868C164.28 53.6773 164.084 55.163 164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868C149.577 55.163 149.381 53.6773 149.577 54.3868H164.084Z" fill="#FFEA2D"/>
+                <path d="M164.084 54.3868C164.084 49.9809 161.245 46.228 157.072 46.228C152.9 46.228 149.577 49.9809 149.577 54.3868M164.084 54.3868C164.084 55.163 164.28 53.6773 164.084 54.3868ZM164.084 54.3868H149.577M149.577 54.3868C149.381 53.6773 149.577 55.163 149.577 54.3868Z" stroke="white"/>
+                <line x1="147.839" y1="54.5484" x2="165.816" y2="54.4346" stroke="white" stroke-linecap="round"/>
+                <line x1="149.531" y1="56.4609" x2="164.244" y2="56.3678" stroke="white" stroke-linecap="round"/>
+                <line x1="167.788" y1="54.4115" x2="171.502" y2="54.4284" stroke="white" stroke-linecap="round"/>
+                <line x1="165.17" y1="45.8238" x2="169.057" y2="41.9363" stroke="white" stroke-linecap="round"/>
+                <line x1="162.556" y1="48.5283" x2="163.663" y2="47.4214" stroke="white" stroke-linecap="round"/>
+                <line x1="156.754" y1="46.1176" x2="156.754" y2="44.5523" stroke="white" stroke-linecap="round"/>
+                <line x1="151.349" y1="48.8871" x2="150.243" y2="47.7812" stroke="white" stroke-linecap="round"/>
+                <line x1="148.456" y1="45.9787" x2="144.568" y2="42.091" stroke="white" stroke-linecap="round"/>
+                <path d="M157.301 31.8442C157.301 31.5681 157.077 31.3442 156.801 31.3442C156.524 31.3442 156.301 31.5681 156.301 31.8442H157.301ZM156.801 42.1789L159.687 37.1789H153.914L156.801 42.1789ZM156.301 31.8442V37.6789H157.301V31.8442H156.301Z" fill="white"/>
+                <line x1="142.164" y1="54.5538" x2="145.878" y2="54.5707" stroke="white" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_0_1" x="0.0022583" y="31.8442" width="38.3386" height="33.1167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter1_d_0_1" x="29.8385" y="13.3939" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_1" x="65.8655" y="0.499847" width="39.3389" height="39.3389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter3_d_0_1" x="102.272" y="13.5203" width="39.3386" height="39.3386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                <filter id="filter4_d_0_1" x="137.664" y="31.3442" width="38.3385" height="33.6167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+              </div>
+            <div class="time">
+              <div class="sunrise">23:48</div>
+              <div class="sunset"> 23:52</div>
+            </div>
+
+          </div>
+          <div class="cuTemp"> 27<span>°C</span></div>
+
+        </div>
+        <div class="seperator"></div>
+        <div class="cardLower">
+          <div class="clSec1">
+            <div class="icon"><img src="images\humidity.png" alt=""></div>
+            <div class="value">51%</div>
+            <div class="label">Humidity</div>
+          </div>
+          <div class="clSec2">
+            <div class="icon">
+              <img src="images\wind.png" alt=""></div>
+            <div class="value">1.2m/s</div>
+            <div class="label">Wind</div>
+          </div>
+          <div class="clSec3">
+            <div class="icon"> <img src="images\visibility (1).png" alt=""></div>
+            <div class="value">14km</div>
+            <div class="label">Visability</div>
+          </div>
+          <div class="clSec4">
+            <div class="icon"> <img src="images\compass.png" alt=""></div>
+            <div class="value">SW</div>
+            <div class="label">Direction</div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <script src="wa2.js"></script>
+  </body>
+</html>
